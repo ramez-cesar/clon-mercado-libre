@@ -1,9 +1,13 @@
+import React from 'react'
+import Routes from './Routes'
+import Header from './Components/Header'
 import './App.css'
 
-function App() {
+function App () {
   return (
     <>
-      <h1>Hola</h1>
+      <Header />
+      <Routes />
     </>
   )
 }
