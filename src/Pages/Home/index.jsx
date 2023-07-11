@@ -1,32 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import { API_URL } from '../../Services'
+import React, { useContext } from 'react'
 import { Link } from 'wouter'
 import Card from '../../Components/Card'
+import { RightButton, LeftButton } from '../../Components/ScrollButtons'
+import { ProductContext } from '../../Context'
 
 function Home () {
-  const [products, setProducts] = useState([])
+  const { products } = useContext(ProductContext)
 
-  useEffect(() => {
-    async function fetchData () {
-      try {
-        const response = await fetch(API_URL)
-        if (!response.ok) {
-          throw new Error('Error HTTP: ', response.status)
-        }
-        const data = await response.json()
-        setProducts(data)
-      } catch (error) {
-        console.error(error)
-      }
-    }
-
-    fetchData()
-  }, [])
-
-  console.log(products)
   return (
-    <div className='w-full max-w-[1200px] m-auto mt-10'>
-      <div className='my-7 flex items-baseline gap-4'>
+    <div className='w-full max-w-[1200px] m-auto mt-10 relative'>
+      <LeftButton />
+
+      <div className='ml-2 flex items-baseline gap-4'>
         <h1 className='text-2xl'>Ofertas</h1>
         <Link
           href='/all-products'
@@ -35,7 +20,8 @@ function Home () {
           Ver todas
         </Link>
       </div>
-      <section className='w-full flex flex-wrap gap-3'>
+
+      <section className='cards-container w-full h-auto py-6 px-2 flex justify-between gap-3'>
         {
           products?.map(({ image, title, price, rating, description }) => (
             <Card
@@ -48,6 +34,8 @@ function Home () {
           ))
         }
       </section>
+
+      <RightButton />
     </div>
   )
 }
