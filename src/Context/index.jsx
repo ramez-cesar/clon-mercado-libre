@@ -26,10 +26,10 @@ function ProductProvider ({ children }) {
   }, [])
 
   // Estado para agregar/eliminar clase del botón de desplazamiento derecho
-  const [addClassRightBtn, setAddClassRightBtn] = useState(null)
+  const [addClassRightBtn, setAddClassRightBtn] = useState('')
 
   // Estado para agregar/eliminar clase del botón de desplazamiento izquierdo
-  const [addClassLeftBtn, setAddClassLeftBtn] = useState(null)
+  const [addClassLeftBtn, setAddClassLeftBtn] = useState('')
 
   return (
     <ProductContext.Provider value={{
