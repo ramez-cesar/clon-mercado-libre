@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card ({ image, title, price, rating, description }) {
   return (
-    <article className='w-[222px] h-[330px] bg-white rounded-md shadow'>
+    <article className='pb-4 bg-white rounded-md shadow snap-center'>
       <div>
         <figure className='p-[15px] flex items-center justify-center'>
           <img
