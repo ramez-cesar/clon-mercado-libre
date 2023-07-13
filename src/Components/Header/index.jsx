@@ -6,7 +6,7 @@ import Logo from './Logo'
 
 function Header () {
   return (
-    <header className=' bg-[#fff159]'>
+    <header className='border-b-[1px] border-[#d7d7d7] bg-[#fff159]'>
       <div className='header-container'>
         <Logo />
         <Search />
