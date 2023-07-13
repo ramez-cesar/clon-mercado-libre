@@ -52,6 +52,24 @@ input::placeholder {
   border-radius: 6px;
 }
 
+.cards-container {
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-container article {
+  flex: 0 0 228px;
+}
+
+.cards-container article:hover {
+  box-shadow: 0px 0px 8px 1px #bebebe;
+}
+
 .description {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -59,4 +77,20 @@ input::placeholder {
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.leftButton {
+  display: none;
+}
+
+.rightButton {
+  display: flex;
+}
+
+.hideButtonRight {
+  display: none;
+}
+
+.hideButtonLeft {
+  display: flex;
 }
