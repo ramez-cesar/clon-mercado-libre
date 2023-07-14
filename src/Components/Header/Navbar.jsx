@@ -5,11 +5,11 @@ import { IconMapPin, IconShoppingCart } from '@tabler/icons-react'
 function Navbar () {
   return (
     <>
-      <section className='navbar-code-postal w-[120px] h-[32px]'>
-        <div className='navbar-code-postal-container flex cursor-pointer'>
+      <section className='navbar-code-postal w-[120px] h-8 cursor-pointer'>
+        <div className='navbar-code-postal-container flex'>
           <IconMapPin className='text-[#333] stroke-1' />
-          <div className='cursor-pointer'>
-            <p className='text-[12px] text-[#33333399]'>Ingresa tu</p>
+          <div className=''>
+            <p className='text-xs text-[#33333399]'>Ingresa tu</p>
             <p className='mt-[-4px] text-[13px] text-[#333]'>código postal</p>
           </div>
         </div>
@@ -17,7 +17,7 @@ function Navbar () {
 
       <section className='navbar-options'>
         <ul className='flex gap-6'>
-          <li className='h-[32px] flex items-end'>
+          <li className='h-8 flex items-end'>
             <Link
               href='/categorias'
               className='text-[13px] tracking-[0.5px] text-[#33333399]'
@@ -26,7 +26,7 @@ function Navbar () {
             </Link>
           </li>
 
-          <li className='h-[32px] flex items-end'>
+          <li className='h-8 flex items-end'>
             <Link
               href='/vender'
               className='text-[13px] tracking-[0.5px] text-[#33333399]'
@@ -35,7 +35,7 @@ function Navbar () {
             </Link>
           </li>
 
-          <li className='h-[32px] flex items-end'>
+          <li className='h-8 flex items-end'>
             <Link
               href='/ayuda'
               className='text-[13px] tracking-[0.5px] text-[#33333399]'
