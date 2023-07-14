@@ -31,14 +31,30 @@ function ProductProvider ({ children }) {
   // Estado para agregar/eliminar clase del botón de desplazamiento izquierdo
   const [addClassLeftBtn, setAddClassLeftBtn] = useState('')
 
+  function rightScrollButton (scrolling, initialScroll, scrollLimit) {
+    const cardItems = document.querySelector('.cards-container')
+    cardItems.scrollLeft += scrolling
+
+    if (cardItems.scrollLeft === scrollLimit) setAddClassRightBtn('hideButtonRight')
+    if (cardItems.scrollLeft !== initialScroll) setAddClassLeftBtn('hideButtonLeft')
+  }
+
+  function leftScrollButton (scrolling, initialScroll, scrollLimit) {
+    const cardItems = document.querySelector('.cards-container')
+    cardItems.scrollLeft -= scrolling
+
+    if (cardItems.scrollLeft === initialScroll) setAddClassLeftBtn('')
+    if (cardItems.scrollLeft !== scrollLimit) setAddClassRightBtn('')
+  }
+
   return (
     <ProductContext.Provider value={{
       products,
       setProducts,
       addClassRightBtn,
-      setAddClassRightBtn,
       addClassLeftBtn,
-      setAddClassLeftBtn
+      rightScrollButton,
+      leftScrollButton
     }}
     >
       {children}
