@@ -34,6 +34,10 @@ input::placeholder {
   display: block;
 }
 
+.hide-list {
+  display: none;
+}
+
 .header-suscribe {
   grid-area: nav-suscribe;
 }
