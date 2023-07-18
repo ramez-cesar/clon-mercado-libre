@@ -34,6 +34,9 @@ function ProductProvider ({ children }) {
   // Estado para el buscador
   const [search, setSearch] = useState('')
 
+  // Estado para mostrar la lista de productos del buscador
+  const [listWantedProducts, setListWantedProducts] = useState('')
+
   function rightScrollButton (scrolling, initialScroll, scrollLimit) {
     const cardItems = document.querySelector('.cards-container')
     cardItems.scrollLeft += scrolling
@@ -65,6 +68,8 @@ function ProductProvider ({ children }) {
       addClassLeftBtn,
       search,
       setSearch,
+      listWantedProducts,
+      setListWantedProducts,
       rightScrollButton,
       leftScrollButton,
       productList
