@@ -31,6 +31,9 @@ function ProductProvider ({ children }) {
   // Estado para agregar/eliminar clase del botón de desplazamiento izquierdo
   const [addClassLeftBtn, setAddClassLeftBtn] = useState('')
 
+  // Estado para el buscador
+  const [search, setSearch] = useState('')
+
   function rightScrollButton (scrolling, initialScroll, scrollLimit) {
     const cardItems = document.querySelector('.cards-container')
     cardItems.scrollLeft += scrolling
@@ -47,14 +50,24 @@ function ProductProvider ({ children }) {
     if (cardItems.scrollLeft !== scrollLimit) setAddClassRightBtn('')
   }
 
+  const productList = products.filter(product => {
+    const productName = product.title.toLowerCase()
+    const productSearch = search.toLowerCase()
+
+    return productName.includes(productSearch)
+  })
+
   return (
     <ProductContext.Provider value={{
       products,
       setProducts,
       addClassRightBtn,
       addClassLeftBtn,
+      search,
+      setSearch,
       rightScrollButton,
-      leftScrollButton
+      leftScrollButton,
+      productList
     }}
     >
       {children}
