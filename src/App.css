@@ -26,6 +26,14 @@ input::placeholder {
   grid-area: nav-search;
 }
 
+.wanted-products {
+  display: none;
+}
+
+.show-item {
+  display: block;
+}
+
 .header-suscribe {
   grid-area: nav-suscribe;
 }
