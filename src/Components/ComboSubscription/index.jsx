@@ -12,9 +12,12 @@ function ComboSubscription ({ children }) {
             <h3 className='mt-4 text-[32px] font-semibold text-white'>$ 99/mes</h3>
           </div>
 
-          <div className='mt-10'>
-            <GeneralButton buttonTitle='Quiero susbscribirme' />
-            <p className='mt-5 text-[11px] leading-4 text-white'>Al suscribirte, aceptas los Términos y condiciones. <br /> de Mercado Puntos. Puedes cancelar cuando quieras.</p>
+          <div className='flex flex-col gap-y-4'>
+            <GeneralButton
+              route='/login'
+              buttonTitle='Quiero susbscribirme'
+            />
+            <p className='text-[11px] leading-4 text-white'>Al suscribirte, aceptas los Términos y condiciones. <br /> de Mercado Puntos. Puedes cancelar cuando quieras.</p>
           </div>
         </article>
       </div>
