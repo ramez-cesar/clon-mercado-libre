@@ -3,7 +3,7 @@ import GeneralButton from '../GeneralButton'
 
 function ComboSubscription ({ children }) {
   return (
-    <section className='combo-sub w-full h-full mb-6 py-12 flex justify-center'>
+    <section className='w-full h-full mb-6 py-12 flex justify-center bg-gradient-to-r from-indigo-950 via-purple-900 to-fuchsia-800'>
       <div className='w-[460px] mr-[52px]'>
         <article className='h-full grid content-between'>
           <div>
@@ -13,14 +13,10 @@ function ComboSubscription ({ children }) {
           </div>
 
           <div className='flex flex-col gap-y-4'>
-<<<<<<< HEAD
             <GeneralButton
               route='/login'
               buttonTitle='Quiero susbscribirme'
             />
-=======
-            <GeneralButton buttonTitle='Quiero susbscribirme' />
->>>>>>> cf83df168027e2c7f749a3877a1a958d6dcedf84
             <p className='text-[11px] leading-4 text-white'>Al suscribirte, aceptas los Términos y condiciones. <br /> de Mercado Puntos. Puedes cancelar cuando quieras.</p>
           </div>
         </article>
