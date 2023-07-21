@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 function BenefitsPoster ({ posterTitle, posterDescription, imagePath, altImagePath }) {
   return (
