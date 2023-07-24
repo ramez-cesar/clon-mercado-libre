@@ -82,15 +82,6 @@ input::placeholder {
   box-shadow: 0px 0px 8px 1px #bebebe;
 }
 
-.description {
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  max-height: 2.6rem;
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .leftButton {
   display: none;
 }
@@ -106,3 +97,19 @@ input::placeholder {
 .hideButtonLeft {
   display: flex;
 }
+
+.free-shipping {
+  background-image: linear-gradient(54.76deg, #5A109C 27.62%, #921DE8 73.53%);
+}
+
+.disney {
+  background-image: linear-gradient(54.76deg, #030C40 27.62%, #030C40 73.53%);
+}
+
+.star {
+  background-image: linear-gradient(54.76deg, #2E183D 27.62%, #A90D60 73.53%);
+}
+
+
+
+
