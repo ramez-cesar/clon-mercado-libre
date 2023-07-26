@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'wouter'
+import { ProductContext } from '../../Context'
 import { IconMapPin, IconShoppingCart } from '@tabler/icons-react'
 
 function Navbar () {
+  const { setOpenModal } = useContext(ProductContext)
+
+  const showModal = () => {
+    setOpenModal(true)
+  }
+
   return (
     <>
-      <section className='navbar-code-postal w-[120px] h-8 cursor-pointer'>
+      <section
+        onClick={showModal}
+        className='navbar-code-postal w-[120px] h-8 cursor-pointer'
+      >
         <div className='navbar-code-postal-container flex'>
           <IconMapPin className='text-[#333] stroke-1' />
-          <div className=''>
-            <p className='text-xs text-[#33333399]'>Ingresa tu</p>
+          <div className='ml-1'>
+            <p className='text-xs text-start text-[#33333399]'>Ingresa tu</p>
             <p className='mt-[-4px] text-[13px] text-[#333]'>código postal</p>
           </div>
         </div>
