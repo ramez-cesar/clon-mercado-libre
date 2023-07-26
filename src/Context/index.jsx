@@ -37,6 +37,9 @@ function ProductProvider ({ children }) {
   // Estado para mostrar la lista de productos del buscador
   const [listWantedProducts, setListWantedProducts] = useState('')
 
+  // Estado para abrir/cerrar modal
+  const [openModal, setOpenModal] = useState(false)
+
   function rightScrollButton (scrolling, initialScroll, scrollLimit) {
     const cardItems = document.querySelector('.cards-container')
     cardItems.scrollLeft += scrolling
@@ -70,6 +73,8 @@ function ProductProvider ({ children }) {
       setSearch,
       listWantedProducts,
       setListWantedProducts,
+      openModal,
+      setOpenModal,
       rightScrollButton,
       leftScrollButton,
       productList
