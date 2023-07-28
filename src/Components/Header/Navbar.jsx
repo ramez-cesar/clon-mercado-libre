@@ -4,10 +4,18 @@ import { ProductContext } from '../../Context'
 import { IconMapPin, IconShoppingCart } from '@tabler/icons-react'
 
 function Navbar () {
-  const { setOpenModal } = useContext(ProductContext)
+  const {
+    setOpenModal,
+    showCP,
+    codePostal,
+    setIncorrectCP,
+    setErrorMessageCP
+  } = useContext(ProductContext)
 
   const showModal = () => {
     setOpenModal(true)
+    setIncorrectCP(false)
+    setErrorMessageCP('')
   }
 
   return (
@@ -20,7 +28,11 @@ function Navbar () {
           <IconMapPin className='text-[#333] stroke-1' />
           <div className='ml-1'>
             <p className='text-xs text-start text-[#33333399]'>Ingresa tu</p>
-            <p className='mt-[-4px] text-[13px] text-[#333]'>código postal</p>
+            {
+              showCP
+                ? <p className='mt-[-4px] text-[13px] text-[#333]'>CP {codePostal}</p>
+                : <p className='mt-[-4px] text-[13px] text-[#333]'>código postal</p>
+            }
           </div>
         </div>
       </section>
