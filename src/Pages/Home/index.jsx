@@ -3,6 +3,7 @@ import { Link } from 'wouter'
 import Card from '../../Components/Card'
 import { RightButton, LeftButton } from '../../Components/ScrollButtons'
 import { ProductContext } from '../../Context'
+import Modal from '../../Components/Modal'
 
 function Home () {
   const { products } = useContext(ProductContext)
@@ -36,6 +37,7 @@ function Home () {
       </section>
 
       <RightButton />
+      <Modal />
     </div>
   )
 }
