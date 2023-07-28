@@ -19,10 +19,9 @@ function Form () {
   const addCodePostal = (e) => {
     e.preventDefault()
 
-    if (codePostal.length !== 5) {
+    if (codePostal.length < 5) {
       setErrorMessageCP('correctCP')
       setIncorrectCP(true)
-      setCodePostal('')
     } else {
       setOpenModal(false)
       setShowCP(true)
@@ -32,9 +31,11 @@ function Form () {
   incorrectInformation = incorrectCP ? '#f04449' : '#000000a4'
 
   const getCodePostal = (e) => {
-    const CP = e.target.value
+    const codePostal = e.target.value
+    // Se estable el formato de código postal en México (de 5 caracteres).
+    const MXPostalCodeFormat = codePostal.slice(0, 5)
 
-    setCodePostal(CP)
+    setCodePostal(MXPostalCodeFormat)
   }
 
   return (
@@ -49,7 +50,6 @@ function Form () {
             placeholder='Ingresa un código postal'
             type='number'
             required
-            maxLength='5'
             autoComplete='off'
           />
           <button
