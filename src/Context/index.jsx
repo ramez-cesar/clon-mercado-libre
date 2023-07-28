@@ -46,6 +46,12 @@ function ProductProvider ({ children }) {
   // Estado para mostrar el CP una vez que se obtiene
   const [showCP, setShowCP] = useState(false)
 
+  // Estado para marcar en rojo el texto y el input cuado el CP es incorrecto
+  const [incorrectCP, setIncorrectCP] = useState(false)
+
+  // Estado para mostrar/ocultar el mensaje de error en CP incorrecto
+  const [errorMessageCP, setErrorMessageCP] = useState('')
+
   function rightScrollButton (scrolling, initialScroll, scrollLimit) {
     const cardItems = document.querySelector('.cards-container')
     cardItems.scrollLeft += scrolling
@@ -85,6 +91,10 @@ function ProductProvider ({ children }) {
       setCodePostal,
       showCP,
       setShowCP,
+      incorrectCP,
+      setIncorrectCP,
+      errorMessageCP,
+      setErrorMessageCP,
       rightScrollButton,
       leftScrollButton,
       productList
