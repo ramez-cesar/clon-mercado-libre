@@ -1,0 +1,31 @@
+.category {
+  width: 200px;
+  padding: 20px 0;
+  line-height: 40px;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 23%;
+  border-radius: 6px;
+  translate: -50% 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: #333333;
+}
+
+.dropdown:hover .category {
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+}
+
+.category::before {
+  content: '';
+  clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 00% 50%);
+  position: absolute;
+  right: 16.5%;
+  top: -5%;
+  padding: 10px;
+  background-color: #333333;
+}
