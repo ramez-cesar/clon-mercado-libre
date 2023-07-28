@@ -1,7 +1,9 @@
 import React, { useContext } from 'react'
 import { Link } from 'wouter'
 import { ProductContext } from '../../Context'
-import { IconMapPin, IconShoppingCart } from '@tabler/icons-react'
+import { NavbarItem, NavbarItemMenu } from './NavbarItem'
+import { IconMapPin, IconShoppingCart, IconChevronDown } from '@tabler/icons-react'
+import './style.css'
 
 function Navbar () {
   const {
@@ -39,14 +41,19 @@ function Navbar () {
 
       <section className='navbar-options'>
         <ul className='flex gap-6'>
-          <li className='h-8 flex items-end'>
-            <Link
-              href='/categorias'
-              className='text-[13px] tracking-[0.5px] text-[#33333399]'
-            >
+          <div className='dropdown flex items-end relative'>
+            <p className='text-[13px] tracking-[0.5px] text-[#33333399] flex cursor-pointer'>
               Categorias
-            </Link>
-          </li>
+              <IconChevronDown className='w-[20px] h-[20px] stroke-1' />
+            </p>
+
+            <div className='category'>
+              <NavbarItemMenu link='/electronics' itemName='Electronics' />
+              <NavbarItemMenu link='/jewelery' itemName='Jewelery' />
+              <NavbarItemMenu link='/mens-clothing' itemName='Mens clothing' />
+              <NavbarItemMenu link='/wonens-clothing' itemName='Womens clothing' />
+            </div>
+          </div>
 
           <li className='h-8 flex items-end'>
             <Link
