@@ -49,7 +49,7 @@ function Navbar () {
               <IconChevronDown className='w-[20px] h-[20px] stroke-1' />
             </p>
 
-            <div className='menu'>
+            <div className='category'>
               <NavbarItemMenu
                 link='/electronics'
                 itemName='Electronics'
