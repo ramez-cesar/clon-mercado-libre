@@ -40,6 +40,12 @@ function ProductProvider ({ children }) {
   // Estado para abrir/cerrar modal
   const [openModal, setOpenModal] = useState(false)
 
+  // Estado para agregar el CP
+  const [codePostal, setCodePostal] = useState('')
+
+  // Estado para mostrar el CP una vez que se obtiene
+  const [showCP, setShowCP] = useState(false)
+
   function rightScrollButton (scrolling, initialScroll, scrollLimit) {
     const cardItems = document.querySelector('.cards-container')
     cardItems.scrollLeft += scrolling
@@ -75,6 +81,10 @@ function ProductProvider ({ children }) {
       setListWantedProducts,
       openModal,
       setOpenModal,
+      codePostal,
+      setCodePostal,
+      showCP,
+      setShowCP,
       rightScrollButton,
       leftScrollButton,
       productList
