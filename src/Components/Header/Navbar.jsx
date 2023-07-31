@@ -51,19 +51,19 @@ function Navbar () {
 
             <div className='category'>
               <NavbarItemMenu
-                link='/electronics'
+                link='/category/electronics'
                 itemName='Electronics'
               />
               <NavbarItemMenu
-                link='/jewelery'
+                link='/category/jewelery'
                 itemName='Jewelery'
               />
               <NavbarItemMenu
-                link='/mens-clothing'
+                link='/category/mens-clothing'
                 itemName='Mens clothig'
               />
               <NavbarItemMenu
-                link='/womens-clothing'
+                link='/category/womens-clothing'
                 itemName='Womens clothig'
               />
             </div>
