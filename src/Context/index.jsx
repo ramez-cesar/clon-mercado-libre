@@ -75,6 +75,14 @@ function ProductProvider ({ children }) {
     return productName.includes(productSearch)
   })
 
+  const filterProduct = (nameCategory) => {
+    const filteredProduct = products.filter(product => {
+      return product.category === nameCategory
+    })
+
+    return filteredProduct
+  }
+
   return (
     <ProductContext.Provider value={{
       products,
@@ -97,7 +105,8 @@ function ProductProvider ({ children }) {
       setErrorMessageCP,
       rightScrollButton,
       leftScrollButton,
-      productList
+      productList,
+      filterProduct
     }}
     >
       {children}
