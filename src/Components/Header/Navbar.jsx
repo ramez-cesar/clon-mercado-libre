@@ -63,7 +63,7 @@ function Navbar () {
                 itemName='Mens clothig'
               />
               <NavbarItemMenu
-                link='/wonens-clothing'
+                link='/womens-clothing'
                 itemName='Womens clothig'
               />
             </div>
