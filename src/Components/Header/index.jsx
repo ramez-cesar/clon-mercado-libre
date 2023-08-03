@@ -17,4 +17,14 @@ function Header () {
   )
 }
 
-export default Header
+function HeaderLogin () {
+  return (
+    <header className='w-full flex justify-start py-2.5 px-20 border-b-[1px] border-[#d7d7d7] bg-[#fff159]'>
+      <div className=''>
+        <Logo />
+      </div>
+    </header>
+  )
+}
+
+export { Header, HeaderLogin }
