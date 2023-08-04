@@ -25,7 +25,7 @@ function BenefitCard ({
             alt={altImageBenefits}
           />
         </figure>
-        <p className='text-[11px] font-semibold text-white text-center leading-[15px] flex items-center flex-grow'>{benefits}</p>
+        <p className='text-xs text-white text-center leading-[15px] flex items-center flex-grow'>{benefits}</p>
       </div>
     </div>
   )
