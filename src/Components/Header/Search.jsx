@@ -38,7 +38,7 @@ function Search () {
           value={search}
           onChange={productFinder}
           onClick={verifyFocus}
-          className='input w-[580px] text-sm text-[rgba(32,32,32,0.8)] py-[8px] px-[15px] shadow outline-none placeholder:text-[#dbdada] autofocus focus:border focus:border-[#3483fa]'
+          className='input w-[580px] text-sm text-[rgba(32,32,32,0.8)] py-[9px] px-[15px] shadow outline-none placeholder:text-[#dbdada] autofocus focus:border focus:border-[#3483fa]'
           type='text'
           placeholder='Buscar productos, marcas y mas...'
         />
