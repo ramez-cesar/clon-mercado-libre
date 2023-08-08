@@ -1,6 +1,5 @@
 import React from 'react'
 import { Header } from '../../Components/Header'
-import Layout from '../../Components/Layout'
 import ComboSubscription from '../../Components/ComboSubscription'
 import Banner from '../../Components/Banner'
 import BenefitCard from '../../Components/BenefitCard'
@@ -19,53 +18,51 @@ function Subscriptions () {
   return (
     <>
       <Header />
-      <Layout>
-        <ComboSubscription>
-          <BenefitCard
-            addClassName='free-shipping'
-            routeImagePoster={shippingBenefit}
-            altImagePoster='Envíos gratis'
-            routeImageBenefits={shippingBenefitLogo}
-            altImageBenefits='Envíos gratis'
-            benefits='ENVIOS GRATIS Y EN EL DÍA'
-          />
+      <ComboSubscription>
+        <BenefitCard
+          addClassName='free-shipping'
+          routeImagePoster={shippingBenefit}
+          altImagePoster='Envíos gratis'
+          routeImageBenefits={shippingBenefitLogo}
+          altImageBenefits='Envíos gratis'
+          benefits='ENVIOS GRATIS Y EN EL DÍA'
+        />
 
-          <BenefitCard
-            addClassName='disney'
-            routeImagePoster={quantumania}
-            altImagePoster='Quantumania'
-            routeImageBenefits={disneyPlusLogo}
-            altImageBenefits='Disney+'
-            benefits='SIN CARGO'
-          />
+        <BenefitCard
+          addClassName='disney'
+          routeImagePoster={quantumania}
+          altImagePoster='Quantumania'
+          routeImageBenefits={disneyPlusLogo}
+          altImageBenefits='Disney+'
+          benefits='SIN CARGO'
+        />
 
-          <BenefitCard
-            addClassName='star'
-            routeImagePoster={espnNBA}
-            altImagePoster='NBA'
-            routeImageBenefits={starPlusLogo}
-            altImageBenefits='Star+'
-            benefits='SIN CARGO'
-          />
-        </ComboSubscription>
+        <BenefitCard
+          addClassName='star'
+          routeImagePoster={espnNBA}
+          altImagePoster='NBA'
+          routeImageBenefits={starPlusLogo}
+          altImageBenefits='Star+'
+          benefits='SIN CARGO'
+        />
+      </ComboSubscription>
 
-        <Banner bannerTitle='Beneficios en envíos'>
-          <BenefitsPoster
-            posterTitle='Envíos gratis'
-            posterDescription='En miles de productos desde $ 299'
-            imagePath={freeShipping}
-            altImagePath='Envíos gratis'
-          />
+      <Banner bannerTitle='Beneficios en envíos'>
+        <BenefitsPoster
+          posterTitle='Envíos gratis'
+          posterDescription='En miles de productos desde $ 299'
+          imagePath={freeShipping}
+          altImagePath='Envíos gratis'
+        />
 
-          <BenefitsPoster
-            posterTitle='Envíos rápidos en el día'
-            posterDescription='Envíos en el mismo día sin costo adicional'
-            imagePath={sameDayShipping}
-            altImagePath='Envíos rápidos en el día'
-          />
-        </Banner>
-        <Modal />
-      </Layout>
+        <BenefitsPoster
+          posterTitle='Envíos rápidos en el día'
+          posterDescription='Envíos en el mismo día sin costo adicional'
+          imagePath={sameDayShipping}
+          altImagePath='Envíos rápidos en el día'
+        />
+      </Banner>
+      <Modal />
     </>
   )
 }
