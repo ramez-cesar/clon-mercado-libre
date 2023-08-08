@@ -26,7 +26,7 @@ function Navbar () {
     <>
       <section
         onClick={showModal}
-        className='navbar-code-postal w-[120px] h-8 cursor-pointer'
+        className='navbar-code-postal w-[128px] h-8 cursor-pointer'
       >
         <div className='navbar-code-postal-container flex'>
           <IconMapPin className='text-[#333] stroke-1' />
@@ -44,9 +44,9 @@ function Navbar () {
       <section className='navbar-options'>
         <ul className='flex gap-6'>
           <div className='dropdown flex items-end relative'>
-            <p className='text-[13px] tracking-[0.5px] text-[#33333399] flex cursor-pointer'>
+            <p className='text-[13px] text-[#33333399] flex items-end cursor-pointer'>
               Categorias
-              <IconChevronDown className='w-[20px] h-[20px] stroke-1' />
+              <IconChevronDown className='w-[20px] h-[20px] pt-1 stroke-1' />
             </p>
 
             <div className='category'>
