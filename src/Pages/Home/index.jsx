@@ -27,9 +27,11 @@ function Home () {
 
         <section className='cards-container w-full h-auto py-6 px-2 flex justify-between gap-3'>
           {
-            products?.map(({ image, title, price, rating, description }) => (
+            products?.map(({ id, image, title, price, rating, description }) => (
               <Card
-                key={title}
+                key={id}
+                id={id}
+                title={title}
                 image={image}
                 price={price}
                 rating={rating.rate}
