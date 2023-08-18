@@ -1,3 +1,64 @@
+.header-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 10px 12px 10px;
+  display: grid;
+  grid-template-areas:
+  "nav-logo nav-search nav-suscribe"
+  "nav-code-postal nav-options nav-register";
+  grid-template-columns: 162px minmax(340px, 580px) minmax(350px, 390px);
+  grid-template-rows: 40px 28px;
+  gap: 12px 24px;
+}
+
+.header-logo {
+  grid-area: nav-logo;
+}
+
+.header-search {
+  grid-area: nav-search;
+}
+
+.wanted-products {
+  display: none;
+}
+
+.show-item {
+  display: block;
+}
+
+.hide-list {
+  display: none;
+}
+
+.header-suscribe {
+  grid-area: nav-suscribe;
+}
+
+.navbar-code-postal {
+  grid-area: nav-code-postal;
+}
+
+.navbar-options {
+  grid-area: nav-options;
+}
+
+.navbar-register {
+  grid-area: nav-register;
+}
+
+.navbar-code-postal:hover::before {
+  content: '';
+  width: 138px;
+  height: 36px;
+  left: 80px;
+  position: absolute;
+  border: solid 1px rgba(0,0,0,.1);
+  border-radius: 6px;
+}
+
 .category {
   width: 200px;
   padding: 20px 0;
