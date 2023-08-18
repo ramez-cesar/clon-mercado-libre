@@ -6,6 +6,7 @@ import Card from '../../Components/Card'
 import { RightButton, LeftButton } from '../../Components/ScrollButtons'
 import { ProductContext } from '../../Context'
 import Modal from '../../Components/Modal'
+import BuyLevel from './Components/BuyLevel'
 
 function Home () {
   const { products } = useContext(ProductContext)
@@ -13,37 +14,41 @@ function Home () {
   return (
     <>
       <Header />
-      <Layout>
-        <LeftButton />
-        <div className='ml-2 flex items-baseline gap-4'>
-          <h1 className='text-2xl'>Ofertas</h1>
-          <Link
-            href='/all-products'
-            className='text-sm text-[#3483fa] hover:text-[#1259c3]'
-          >
-            Ver todas
-          </Link>
-        </div>
+      <main>
+        <section className='w-full relative'>
+          <Layout>
+            <div className='ml-2 flex items-baseline gap-4'>
+              <h1 className='text-2xl'>Ofertas</h1>
+              <Link
+                href='/all-products'
+                className='text-sm text-[#3483fa] hover:text-[#1259c3]'
+              >
+                Ver todas
+              </Link>
+            </div>
 
-        <section className='cards-container w-full h-auto py-6 px-2 flex justify-between gap-3'>
-          {
-            products?.map(({ id, image, title, price, rating, description }) => (
-              <Card
-                key={id}
-                id={id}
-                title={title}
-                image={image}
-                price={price}
-                rating={rating.rate}
-                description={description}
-              />
-            ))
-          }
+            <LeftButton />
+            <div className='max-w-[1200px] cards-container w-full h-auto py-6 flex justify-between gap-3'>
+              {
+                products?.map(({ id, image, title, price, rating, description }) => (
+                  <Card
+                    key={id}
+                    id={id}
+                    title={title}
+                    image={image}
+                    price={price}
+                    rating={rating.rate}
+                    description={description}
+                  />
+                ))
+              }
+            </div>
+            <RightButton />
+          </Layout>
         </section>
-
-        <RightButton />
-        <Modal />
-      </Layout>
+        <BuyLevel />
+      </main>
+      <Modal />
     </>
   )
 }
