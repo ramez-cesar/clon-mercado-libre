@@ -13,8 +13,8 @@ function Card ({
   return (
     <Link href={`/product/${id}/${title}`}>
       <a>
-        <article className='pb-4 bg-white rounded-md shadow snap-center'>
-          <div className='w-[228px]'>
+        <article className='w-[228px] pb-4 bg-white rounded-md shadow snap-center'>
+          <div>
             <figure className='p-[15px] flex items-center justify-center'>
               <img
                 className='w-[150px] h-[150px] object-contain'
