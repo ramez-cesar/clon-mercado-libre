@@ -75,12 +75,21 @@ function ProductProvider ({ children }) {
     return productName.includes(productSearch)
   })
 
-  const filterProduct = (nameCategory) => {
-    const filteredProduct = products.filter(product => {
-      return product.category === nameCategory
+  const filterByCategory = (categoryName) => {
+    const filtered = products.filter(product => {
+      return product.category === categoryName
     })
 
-    return filteredProduct
+    return filtered
+  }
+
+  // Pendiente por agregar refactor (no se cumple con principio DRY con la función filterByCategory)
+  const filterById = (id) => {
+    const filtered = products.filter(product => {
+      return product.id === +id
+    })
+
+    return filtered
   }
 
   return (
@@ -106,7 +115,8 @@ function ProductProvider ({ children }) {
       rightScrollButton,
       leftScrollButton,
       productList,
-      filterProduct
+      filterByCategory,
+      filterById
     }}
     >
       {children}
