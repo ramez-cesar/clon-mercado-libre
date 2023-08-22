@@ -10,10 +10,15 @@ function Card ({
   rating,
   description
 }) {
+  // Función que desplaza hacia arriba cada vez que se abren los detalles de un producto.
+  function scrollTop () {
+    document.documentElement.scrollTop = 0
+  }
+
   return (
     <Link href={`/product/${id}/${title}`}>
       <a>
-        <article className='w-[228px] pb-4 bg-white rounded-md shadow snap-center'>
+        <article onClick={scrollTop} className='w-[228px] pb-4 bg-white rounded-md shadow snap-center border border-[#f5f5f5]'>
           <div>
             <figure className='p-[15px] flex items-center justify-center'>
               <img
