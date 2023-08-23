@@ -75,7 +75,18 @@ function ProductProvider ({ children }) {
     return productName.includes(productSearch)
   })
 
-  const filterByCategory = (categoryName) => {
+  // Función que verifica y devuelve productos filtrados a partir del nombre de una categoría
+  const filterByCategory = (category) => {
+    let categoryName
+
+    if (category === 'mens-clothing') {
+      categoryName = "men's clothing"
+    } else if (category === 'womens-clothing') {
+      categoryName = "women's clothing"
+    } else {
+      categoryName = category
+    }
+
     const filtered = products.filter(product => {
       return product.category === categoryName
     })
@@ -83,7 +94,7 @@ function ProductProvider ({ children }) {
     return filtered
   }
 
-  // Pendiente por agregar refactor (no se cumple con principio DRY con la función filterByCategory)
+  // Función que filtra productos a partir de un ID.
   const filterById = (id) => {
     const filtered = products.filter(product => {
       return product.id === +id
