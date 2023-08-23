@@ -1,0 +1,8 @@
+.similarProducts::before {
+  content: '';
+  display: block;
+  margin-left: 40px;
+  width: 760px;
+  height: 1px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
