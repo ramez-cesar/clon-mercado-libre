@@ -1,0 +1,12 @@
+:is(.container-freeShipping, .container-sameDayShipping)::after {
+  content: '';
+  width: 100%;
+  height: 96px;
+  top: 0;
+  position: absolute;
+  background-image: linear-gradient(to right, #ffce52, transparent, transparent);
+}
+
+.posterTitle, .posterDescription {
+  text-wrap: balance;
+}
