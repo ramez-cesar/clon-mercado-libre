@@ -13,6 +13,7 @@ import starPlusLogo from '../../assets/images/starPlusLogo.png'
 import freeShipping from '../../assets/images/freeShipping.jpg'
 import sameDayShipping from '../../assets/images/sameDayShipping.jpg'
 import Modal from '../../Components/Modal'
+import './style.css'
 
 function Subscriptions () {
   return (
