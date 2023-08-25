@@ -1,0 +1,15 @@
+.leftButton {
+  display: none;
+}
+
+.rightButton {
+  display: flex;
+}
+
+.hideButtonRight {
+  display: none;
+}
+
+.hideButtonLeft {
+  display: flex;
+}

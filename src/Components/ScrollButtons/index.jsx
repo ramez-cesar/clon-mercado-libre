@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
 import { ProductContext } from '../../Context'
+import './style.css'
 
 function RightButton () {
   const { addClassRightBtn, rightScrollButton } = useContext(ProductContext)
