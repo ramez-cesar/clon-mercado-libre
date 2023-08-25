@@ -5,8 +5,9 @@ import Layout from '../../Components/Layout'
 import Card from '../../Components/Card'
 import { RightButton, LeftButton } from '../../Components/ScrollButtons'
 import { ProductContext } from '../../Context'
-import Modal from '../../Components/Modal'
 import BuyLevel from './Components/BuyLevel'
+import Modal from '../../Components/Modal'
+import './style.css'
 
 function Home () {
   const { products } = useContext(ProductContext)
@@ -28,7 +29,7 @@ function Home () {
             </div>
 
             <LeftButton />
-            <div className='max-w-[1200px] cards-container w-full h-auto py-6 flex justify-between gap-3'>
+            <div className='cards-container max-w-[1200px] w-full h-auto py-6 flex justify-between gap-3'>
               {
                 products?.map(({ id, image, title, price, rating, description }) => (
                   <Card
