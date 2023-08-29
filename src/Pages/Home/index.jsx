@@ -21,7 +21,7 @@ function Home () {
             <div className='ml-2 flex items-baseline gap-4'>
               <h1 className='text-2xl'>Ofertas</h1>
               <Link
-                href='/all-products'
+                href='/clon-mercado-libre/all-products'
                 className='text-sm text-[#3483fa] hover:text-[#1259c3]'
               >
                 Ver todas

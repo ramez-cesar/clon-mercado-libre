@@ -15,11 +15,11 @@ function FormLogin () {
           </div>
 
           <div className='mt-8 flex gap-6'>
-            <Link href='/donde_sea'>
+            <Link href='/clon-mercado-libre/donde_sea'>
               <a className='px-5 py-3 text-sm font-semibold text-[rgba(0,0,0,.25)] bg-[rgba(0,0,0,.1)] rounded-md'>Continuar</a>
             </Link>
 
-            <Link href='/donde_sea'>
+            <Link href='/clon-mercado-libre/donde_sea'>
               <a className='px-5 py-3 text-sm font-semibold text-[#3483fa]'>Crear cuenta</a>
             </Link>
           </div>

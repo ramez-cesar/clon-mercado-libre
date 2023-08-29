@@ -12,7 +12,7 @@ function LandscapeLeft () {
         <h5 className='pb-2 text-xs font-semibold text-[rgba(0,0,0,.9)]'>Reportar un problema</h5>
         <ul>
           <li className='h-10 flex border-b border-[#0000001a] transition hover:bg-[rgba(0,0,0,.04)]'>
-            <Link href='/login'>
+            <Link href='/clon-mercado-libre/login'>
               <a className='w-full flex items-center'>
                 <IconDeviceMobile className='text-[rgba(0,0,0,0.8)]' />
                 <div className='w-full'>
@@ -24,7 +24,7 @@ function LandscapeLeft () {
           </li>
 
           <li className='h-10 flex transition hover:bg-[rgba(0,0,0,.04)]'>
-            <Link href='/login'>
+            <Link href='/clon-mercado-libre/login'>
               <a className='w-full flex items-center'>
                 <IconUser className='text-[rgba(0,0,0,0.8)]' />
                 <div className='w-full'>

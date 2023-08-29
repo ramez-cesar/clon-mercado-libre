@@ -14,7 +14,7 @@ function ComboSubscription ({ children }) {
 
           <div className='flex flex-col gap-y-4'>
             <GeneralButton
-              route='/login'
+              route='/clon-mercado-libre/login'
               buttonTitle='Quiero suscribirme'
             />
             <p className='text-[11px] leading-3 text-white'>Al suscribirte, aceptas los Términos y condiciones. <br /> de Mercado Puntos. Puedes cancelar cuando quieras.</p>

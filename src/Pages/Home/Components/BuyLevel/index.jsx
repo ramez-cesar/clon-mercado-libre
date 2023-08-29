@@ -17,7 +17,7 @@ function BuyLevel () {
         </div>
         <Lealtad />
         <div className='py-4 px-8 flex justify-end bg-white border-t border-[#ededed] rounded-b-lg'>
-          <Link href='/suscripciones'>
+          <Link href='/clon-mercado-libre/suscripciones'>
             <a className='py-2 px-4 text-sm text-white rounded-lg bg-[#3483fa]'>Suscríbete</a>
           </Link>
         </div>
