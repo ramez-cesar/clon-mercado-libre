@@ -13,7 +13,7 @@ function Details () {
   const { filterById } = useContext(ProductContext)
 
   // eslint-disable-next-line no-unused-vars
-  const [_, page, id] = location.split('/')
+  const [_, subdomain, page, id] = location.split('/')
   const selectedProduct = filterById(id)
 
   // Se obtiene la categoría del producto
