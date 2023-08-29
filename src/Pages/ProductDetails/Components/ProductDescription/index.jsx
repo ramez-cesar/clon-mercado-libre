@@ -7,7 +7,7 @@ function ProductDescription () {
   const { filterById } = useContext(ProductContext)
 
   // eslint-disable-next-line no-unused-vars
-  const [_, section, id] = location.split('/')
+  const [_, subdomain, page, id] = location.split('/')
   const selectedProduct = filterById(id)
 
   return (
