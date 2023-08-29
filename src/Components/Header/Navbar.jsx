@@ -51,31 +51,31 @@ function Navbar () {
 
             <div className='category'>
               <NavbarItemMenu
-                link='/category/electronics'
+                link='/clon-mercado-libre/category/electronics'
                 itemName='Electronics'
               />
               <NavbarItemMenu
-                link='/category/jewelery'
+                link='/clon-mercado-libre/category/jewelery'
                 itemName='Jewelery'
               />
               <NavbarItemMenu
-                link='/category/mens-clothing'
+                link='/clon-mercado-libre/category/mens-clothing'
                 itemName='Mens clothig'
               />
               <NavbarItemMenu
-                link='/category/womens-clothing'
+                link='/clon-mercado-libre/category/womens-clothing'
                 itemName='Womens clothig'
               />
             </div>
           </div>
 
           <NavbarItem
-            link='/vender'
+            link='/clon-mercado-libre/vender'
             textColor={textColorNavLeft}
             itemName='Vender'
           />
           <NavbarItem
-            link='/ayuda'
+            link='/clon-mercado-libre/ayuda'
             textColor={textColorNavLeft}
             itemName='Ayuda'
           />
@@ -85,22 +85,22 @@ function Navbar () {
       <section className='navbar-register flex justify-end'>
         <ul className='flex gap-6'>
           <NavbarItem
-            link='/registration'
+            link='/clon-mercado-libre/registration'
             textColor={textColorNavRight}
             itemName='Crear cuenta'
           />
           <NavbarItem
-            link='/login'
+            link='/clon-mercado-libre/login'
             textColor={textColorNavRight}
             itemName='Ingresa'
           />
           <NavbarItem
-            link='/mis-compras'
+            link='/clon-mercado-libre/mis-compras'
             textColor={textColorNavRight}
             itemName='Mis compras'
           />
           <NavbarItem
-            link='/carrito'
+            link='/clon-mercado-libre/carrito'
             itemName={
               <IconShoppingCart className='text-[#333] stroke-1 cursor-pointer' />
               }

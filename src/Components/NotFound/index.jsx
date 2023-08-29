@@ -14,7 +14,7 @@ function NotFound () {
             - Page Not Found
           </h1>
           <p className='text-sm text-[#33333399]'>La página no fue encontrada o se encuentra en construcción... Por favor, inténtelo más tarde.</p>
-          <Link href='./'>
+          <Link href='/clon-mercado-libre'>
             <a className='text-sm text-[#068FFF] font-semibold cursor-pointer'>Regresar a inicio.</a>
           </Link>
         </div>

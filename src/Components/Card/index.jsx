@@ -16,7 +16,7 @@ function Card ({
   }
 
   return (
-    <Link href={`/product/${id}/${title}`}>
+    <Link href={`/clon-mercado-libre/product/${id}/${title}`}>
       <a>
         <article onClick={scrollTop} className='w-[228px] pb-4 bg-white rounded-md shadow snap-center border border-[#f5f5f5]'>
           <div>

@@ -4,7 +4,7 @@ import { Link } from 'wouter'
 function Logo () {
   return (
     <section className='header-logo cursor-pointer'>
-      <Link href='/'>
+      <Link href='/clon-mercado-libre'>
         <figure>
           <img
             className='w-[134px]'

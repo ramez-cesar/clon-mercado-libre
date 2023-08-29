@@ -4,7 +4,7 @@ import { Link } from 'wouter'
 function Suscribe () {
   return (
     <section className='header-suscribe flex justify-end cursor-pointer'>
-      <Link href='/suscripciones'>
+      <Link href='/clon-mercado-libre/suscripciones'>
         <a>
           <figure>
             <img

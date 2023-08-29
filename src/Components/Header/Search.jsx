@@ -92,7 +92,7 @@ function ProductFound ({ id, titleProduct }) {
         <IconSearch className='w-5 h-5 text-[#d7d7d7] stroke-1' />
       </span>
       <Link
-        href={`/product/${id}/${titleProduct}`}
+        href={`/clon-mercado-libre/product/${id}/${titleProduct}`}
         className='py-2.5 pl-11 text-[13px] block'
       >
         {titleProduct}
