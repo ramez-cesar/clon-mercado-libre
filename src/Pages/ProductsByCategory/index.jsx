@@ -13,7 +13,7 @@ function ProductsByCategory () {
   const { filterByCategory } = useContext(ProductContext)
 
   // eslint-disable-next-line no-unused-vars
-  const [_, page, categoryName] = location.split('/')
+  const [_, subdomain, page, categoryName] = location.split('/')
   productList = filterByCategory(categoryName)
 
   return (
