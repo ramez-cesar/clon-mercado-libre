@@ -29,5 +29,6 @@
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
-  }
+  },
+  "homepage": "https://github.com/ramez-cesar/clon-mercado-libre/"
 }
